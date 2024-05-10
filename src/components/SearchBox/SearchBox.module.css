@@ -1,0 +1,27 @@
+.searchBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.input {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  padding-left: 30px;
+  background-color: #588b8b8a;
+  color: #2a4444;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 48%;
+  left: 5px;
+  /* transform: translate(0, -50%); */
+  color: #2a4444;
+}

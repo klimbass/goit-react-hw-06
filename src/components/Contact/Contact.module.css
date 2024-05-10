@@ -1,0 +1,45 @@
+.card {
+  border: 2px solid #588b8b;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  background-color: #588b8b4e;
+  font-family: sans-serif;
+  color: #121b1b;
+  gap: 16px;
+}
+
+.cardLis {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon {
+  color: #588b8b;
+}
+
+.cardText {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.cardBtn {
+  background-color: #588b8b;
+  color: #fafafa;
+  border-radius: 4px;
+  height: 36px;
+  border: none;
+
+  font-size: 24px;
+  font-weight: 600;
+}
