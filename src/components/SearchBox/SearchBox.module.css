@@ -16,6 +16,13 @@
   font-size: 16px;
   font-weight: 600;
   outline: none;
+  transition: box-shadow 500ms linear;
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: 8px 4px rgba(170, 77, 48, 0.278),
+    -8px -4px rgba(48, 111, 170, 0.278);
 }
 
 .searchIcon {

@@ -4,11 +4,17 @@
   gap: 8px;
   border-radius: 8px;
   padding: 16px;
-  background-color: #588b8b;
+  background: linear-gradient(40deg, teal, rgb(151, 208, 208) 50%, teal);
   font-family: sans-serif;
   font-weight: 600;
   color: #2a4444;
   position: relative;
+  transition: box-shadow 500ms linear;
+}
+.form:hover,
+.form:focus {
+  box-shadow: 8px 4px rgba(170, 77, 48, 0.278),
+    -8px -4px rgba(48, 111, 170, 0.278);
 }
 
 .input {

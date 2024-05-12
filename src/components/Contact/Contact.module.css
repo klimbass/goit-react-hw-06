@@ -11,6 +11,13 @@
   font-family: sans-serif;
   color: #121b1b;
   gap: 16px;
+  transition: box-shadow 500ms linear, background-color 250ms linear;
+}
+.card:hover,
+.card:focus {
+  box-shadow: 8px 4px rgba(170, 77, 48, 0.278),
+    -8px -4px rgba(48, 111, 170, 0.278);
+  background-color: #3453534e;
 }
 
 .cardLis {
@@ -42,4 +49,8 @@
 
   font-size: 24px;
   font-weight: 600;
+  transition: background-color 250ms linear;
+}
+.cardBtn:hover {
+  background-color: rgba(83, 33, 17, 0.601);
 }

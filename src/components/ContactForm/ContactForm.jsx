@@ -1,12 +1,13 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
-import { nanoid } from "nanoid";
 import * as Yup from "yup";
 
 import { GoCheckCircle } from "react-icons/go";
 import { GoCheckCircleFill } from "react-icons/go";
 
 import css from "./ContactForm.module.css";
+import { useDispatch } from "react-redux";
+import { addContact } from "../../redux/contactsSlice";
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
@@ -24,13 +25,14 @@ const initialValues = {
   name: "",
   number: "",
 };
-export default function ContactForm({ setContactList, contactList }) {
+export default function ContactForm() {
+  const dispatch = useDispatch();
+
   const nameId = useId();
   const numberId = useId();
 
   const handleSubmit = (values, actions) => {
-    values.id = "id-" + nanoid(5);
-    setContactList([...contactList, values]);
+    dispatch(addContact(values));
     actions.resetForm();
   };
 
